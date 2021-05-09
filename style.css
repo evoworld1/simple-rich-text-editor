@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./pencil-alt-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 4rem;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.toolbar {
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+button {
+  color: black;
+  width: 40px;
+  height: 25px;
+  background-color: white;
+  border: none;
+  outline: none;
+  transition: 100ms ease;
+}
+
+button:active {
+  color: black;
+  border: solid 1px black;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.432);
+  transform: scale(1.1);
+  transition: 100ms ease;
+  background-color: white;
+}
+
+#export-json {
+  margin-left: auto;
+  width: 68px;
+  border-radius: 3px;
+}
+
+.fa-file-download {
+  transform: scale(2);
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.editable-text {
+  width: 80vw;
+  height: 70vh;
+  border: solid 1px black;
+  outline: none;
+  border-radius: 10px;
+  padding: 1rem;
+  background: transparent;
+  transition: box-shadow 200ms ease;
+}
+
+.editable-text:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+  transition: 200ms ease;
+  border: none;
+}
+
+.editable-text:focus {
+  background: none;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+}
