@@ -1,4 +1,7 @@
 let buttons = document.querySelectorAll(".toolbar-btn");
+let saveButton = document.getElementById("save-btn");
+let loadButton = document.getElementById("load-btn");
+let exportButton = document.getElementById("export-json");
 
 for (let button of buttons) {
   button.addEventListener("click", () => {
@@ -40,3 +43,7 @@ const loadStorage = () => {
   outputToSave = parsedSavedOutput;
   output.innerHTML = outputToSave.outputToSave;
 };
+
+saveButton.addEventListener("click", populateStorage);
+loadButton.addEventListener("click", loadStorage);
+exportButton.addEventListener("click", exportJson);
